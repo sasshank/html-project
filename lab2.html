@@ -3,84 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab 2</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .indent {
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black; /* Thicker outer border for the table */
+        }
+
+        th, td {
+            border: 1px solid black; /* Thin border for cells */
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
-<body>   
-</body>
-</html>
+<body>
+    <div id="top"></div>
+
     <h1>Welcome to Lab 2</h1>
     <h1>This is heading 1.</h1>
     <h2>This is heading 2.</h2>
+
     <p>This is a new paragraph.</p>
     <hr>
-    <!-- This is a comment explaining the code -->
-    <p>This sentence uses <strong>for strong importance</strong>.</p>
-    <p>This sentence uses both <strong>for strong importance</strong> and <em>for emphasis</em>.</p>
+
+    <p><strong><em>This sentence uses both &lt;strong&gt; for strong importance and &lt;em&gt; for emphasis.</em></strong></p>
     <p><em>This sentence is written in italic style.</em></p>
     <p><small>This sentence is written in small style.</small></p>
-    <p>
-        This sentence contains <sub>subscript</sub> and <sup>superscript</sup> text.
-    </p>
-    <p>
-        This sentence contains <del>deleted text</del> and <ins>inserted text</ins>.
-    </p>
-    <p>
-        The HTML <code>&lt;a&gt;</code> (anchor) tag defines a hyperlink. <br>
-        A hyperlink (or link) is a word, group of words, or image that you can click on to jump to another document. <br>
-        When you move the cursor over a link in a Web page, the arrow will turn into a little hand. <br>
-        The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which indicates the link’s destination. <br>
-        By default, links will appear as follows in all browsers:
-    </p>
-    <ol>
-        <li>An unvisited link is underlined and blue.</li>
-        <li>A visited link is underlined and purple.</li>
-        <li>An active link is underlined and red.</li>
-    </ol>
-    <p><a href="https://algomau.ca">Algoma University</a></p>
+    <p>This sentence contains <sub>subscript</sub> and <sup>superscript</sup> text.</p>
+    <p>This sentence contains <del>deleted text</del> and <ins>inserted text.</ins></p>
+
+    <div class="indent">
+        <p>
+            The HTML <code>&lt;a&gt;</code> (anchor) tag defines a hyperlink.<br>
+            A hyperlink (or link) is a word, group of words, or image that you can click on to jump to another document.<br>
+            When you move the cursor over a link in a Web page, the arrow will turn into a little hand.<br>
+            The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which indicates the link’s destination.<br>
+            By default, links will appear as follows in all browsers:
+        </p>
+        <ol>
+            <li>An unvisited link is underlined and blue.</li>
+            <li>A visited link is underlined and purple.</li>
+            <li>An active link is underlined and red.</li>
+        </ol>
+        <p>
+            <a href="https://algomau.ca" target="_blank">Algoma University</a>
+        </p>
+    </div>
 
     <h1>Our Milky Way Galaxy</h1>
     <h2>The picture dimensions are 300x200 pixels</h2>
-    <img src="https://via.placeholder.com/300x200" alt="Milky Way Galaxy">
+    <img src="milkyway.jpg" alt="Milky Way Galaxy" width="300" height="200">
     <p>There are two more tags below:</p>
     <ol>
         <li>HTML List</li>
         <li>HTML Table</li>
     </ol>
+
     <p>HTML List</p>
     <ul>
         <li>The ordered List</li>
         <li>The unordered List</li>
         <li>The definition List</li>
     </ul>
-    <p style="margin-left: 50px;">
-        <code>&lt;dt&gt;</code> defines the item in the list. <br>
-        <code>&lt;dd&gt;</code> - describes the item in the list. <br>
-        For example:
-    </p>
-    <dl style="margin-left: 50px;">
+
+    <p class="indent">&lt;dt&gt; defines the item in the list.</p>
+    <p class="indent">&lt;dd&gt; - describes the item in the list.</p>
+    <p class="indent">For example:</p>
+
+    <dl class="indent">
         <dt><b>HTML</b></dt>
-        <dd>Hypertext Markup Language</dd>
+        <dd>-Hypertext Markup Language</dd>
     </dl>
-    <table border="1">
+
+    <table style="border-collapse: separate; border-spacing: 2px; width: 100%; border: 1px solid black;">
         <tr>
-            <th>Header Column 1</th>
-            <th>Header Column 2</th>
-            <th>Header Column 3</th>
-            <th>Header Column 4</th>
+            <th style="border: 1px solid black; padding: 4px; text-align: center;">Header Column 1</th>
+            <th style="border: 1px solid black; padding: 4px; text-align: center;">Header Column 2</th>
+            <th style="border: 1px solid black; padding: 4px; text-align: center;">Header Column 3</th>
+            <th style="border: 1px solid black; padding: 4px; text-align: center;">Header Column 4</th>
         </tr>
         <tr>
-            <td>column 1</td>
-            <td>column 2</td>
-            <td>column 3</td>
-            <td>column 4</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 1</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 2</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 3</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 4</td>
         </tr>
         <tr>
-            <td>column 1</td>
-            <td>column 2</td>
-            <td>column 3</td>
-            <td>column 4</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 1</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 2</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 3</td>
+            <td style="border: 1px solid black; padding: 4px; text-align: center;">column 4</td>
         </tr>
     </table>
+
     <p><a href="#top">Go to Top</a></p>
 </body>
 </html>
